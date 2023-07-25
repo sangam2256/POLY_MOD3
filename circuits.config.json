@@ -1,0 +1,13 @@
+[
+  {
+    "name": "CircuitSangam",
+    "protocol": "groth16",
+    "circuit": "CircuitSangam/circuit.circom",
+    "input": "CircuitSangam/input.json",
+    "wasm": "CircuitSangam/out/circuit.wasm",
+    "zkey": "CircuitSangam/out/CircuitSangam.zkey",
+    "vkey": "CircuitSangam/out/CircuitSangam.vkey",
+    "r1cs": "CircuitSangam/out/CircuitSangam.r1cs",
+    "beacon": "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f"
+  }
+]
