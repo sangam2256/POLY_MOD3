@@ -22,7 +22,7 @@ template CircuitSangam () {
 
    component andGate = AND();
    component notgate = NOT();
-   component norGate = NOR();
+   component orGate = OR();
 
 // circuit logic
 
@@ -33,9 +33,9 @@ template CircuitSangam () {
    notgate.in <== b;
    y <== notgate.out;
 
-   norGate.x <== x;
-   norGate.y <== y;
-   q <== norGate.out;
+   orGate.x <== x;
+   orGate.y <== y;
+   q <== orGate.out;
 
 }
 // template for AND
@@ -53,14 +53,13 @@ template NOT() {
 
     out <== 1 + in - 2*in;
 }
-// template for NOR
-template NOR() {
-    signal input x;
-    signal input y;
+
+template OR() {
+    signal input a;
+    signal input b;
     signal output out;
 
-    out <== x*y + 1 - x - y;
-
+    out <== a + b - a*b;
 }
 
 component main = CircuitSangam();
