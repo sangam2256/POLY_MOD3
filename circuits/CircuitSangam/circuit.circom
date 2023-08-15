@@ -4,41 +4,40 @@ pragma circom 2.0.0;
 
 template CircuitSangam () {  
 
-  // signal inputs
+    // signal inputs
+    signal input a;
+    signal input b;
 
-   signal input a;
-   signal input b;
+    // signal from gates
+    signal x;
+    signal y;
 
-// signals from gates
+    // signal output 
+    signal output q;
 
-   signal x;
-   signal y;
+    // component used to create Custom Circuit
+    component andGate = AND();
+    component notGate = NOT();
+    component orGate = OR();
 
-// final signal output
+    // Circuit Logic
+        // And Gate
+    andGate.a <== a;
+    andGate.b <== b;
+    x <== andGate.out;
 
-   signal output q;
+        // Not Gate  
+    notGate.in <== b;
+    y <== notGate.out;
 
-// component gates used to create custom circuit
+        // OR Gate
+    orGate.a <== x;
+    orGate.b <== y;
 
-   component andGate = AND();
-   component notgate = NOT();
-   component orGate = OR();
-
-// circuit logic
-
-   andGate.a <== a;
-   andGate.b <== b;
-   x <== andGate.out;
-
-   notgate.in <== b;
-   y <== notgate.out;
-
-   orGate.x <== x;
-   orGate.y <== y;
-   q <== orGate.out;
+    q <== orGate.out;
 
 }
-// template for AND
+
 template AND() {
     signal input a;
     signal input b;
@@ -46,7 +45,6 @@ template AND() {
 
     out <== a*b;
 }
-// template for NOT
 template NOT() {
     signal input in;
     signal output out;
