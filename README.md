@@ -67,6 +67,9 @@ Sangam Kumar - Chandigarh University
 
 Before deploying, make sure to create your own `.env` file and provide your wallet private key where required, i.e., `MYPRIVATEKEY= 'your wallet private key'` from your respective wallet. This information should be kept confidential.
 
+## Video Walkthrough
+https://www.loom.com/share/f36121be9aee4d228d9762c8473347b1?sid=6c5291f3-f53e-42ad-b756-c9da84ebf4eb
+
 ---
 
 Ensure to replace `<your information>` with relevant information specific to the project. This systematic README file will provide users with a clear understanding of the project, its purpose, and how to get started.
