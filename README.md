@@ -3,7 +3,7 @@
 This project aims to implement a logical gate circuit using the circom programming language and provide a Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (ZK-SNARK) proof to demonstrate the knowledge of specific inputs that yield a particular output.
 
 ## Circuit Logic
-
+ 
 The logical gate circuit has the following truth table:
 
 ```
