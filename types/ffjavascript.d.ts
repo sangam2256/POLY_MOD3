@@ -1,1 +1,1 @@
-declare module 'ffjavascript';
+declare module 'ffjavascript'; 
