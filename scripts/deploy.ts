@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 import { utils } from "ffjavascript";
 import { BigNumber, BigNumberish } from "ethers";
 
-const { unstringifyBigInts } = utils;
+const { unstringifyBigInts } = utils; 
 const fs = require("fs");
 const snarkjs = require("snarkjs");
 
