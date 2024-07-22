@@ -4,7 +4,7 @@
 import type { Listener } from "@ethersproject/providers";
 import type { Event, EventFilter } from "ethers";
 
-export interface TypedEvent<
+export interface TypedEvent< 
   TArgsArray extends Array<any> = any,
   TArgsObject = any
 > extends Event {
