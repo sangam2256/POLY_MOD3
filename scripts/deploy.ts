@@ -5,7 +5,7 @@ import { BigNumber, BigNumberish } from "ethers";
 const { unstringifyBigInts } = utils; 
 const fs = require("fs");
 const snarkjs = require("snarkjs");
-
+ 
 interface ICallData {
   pi_a: BigNumberish[];
   pi_b: BigNumberish[][];
